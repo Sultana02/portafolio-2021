@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@500&display=swap');
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Fuente de la página */
+body {
+    font-family:'Kaisei Opti', serif;
+    overflow: hidden;
+}
+/*Color de fondo */
+.wrapper {
+    width: 100vw; 
+    height: 100vh;
+    background-color: #f6c8c7;
+    background-image: url(img/pexels-bongkarn-thanyakij-3774083.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+} 
+
+.brand {
+    margin-top: -7px;
+}
+/*PF*/
+.brand span {
+    color: #f19d9e;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    color: #9e4244;
+    text-decoration: none;
+}
+
+/*Home*/
+.menu .active {
+    color: #550c3e;
+}
+
+/*Efecto de menú*/
+.menu a:hover {
+     background-color: #eedbe5;
+     color: #9e4244;
+     transition: ease-in .4s;
+     border-radius: 20px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+span{
+    color: #9e4244;
+}
+/*Boton de descarga cv*/
+.download-cv {
+    padding: 10px 20px;
+    background-color: #ba7b7c;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(150, 8, 102);
+}
+
+.download-cv:hover{
+        background-color: #f6c8c7;
+}
+
+.main img {
+    width: 350px;
+    height: 450px;
+    border: 5px solid #943662;
+}
+
+/*sobre mi*/
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-image: url(img/lumine-tocando-el-piano-genshin-impact-videojuego-de-anime-papel-pintado-3440x1440_15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color: #aa5c5d;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: #993a7b;
+    margin-top: 5px;
+    margin-bottom: 2.5em;
+}
+
+/*Portafolio*/
+.portafolio {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-image: url(img/computer-laptop-coffee-programming-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Para controlar la posición de título*/
+.portafolio-headings {
+    width: 5vw;
+    margin-top: -600%;
+    margin-left: 80%;
+    padding: 2em;
+    color: #aa5c5d;
+}
+
+.portafolio-headings h2 {
+    font-size: 2.5em;
+    padding: 2px;
+    
+}
+/*texto descripción*/
+.portafolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin-top: -70%;
+    margin-bottom: -100%;
+    margin-left: 70%;
+    display: flex;
+    color: #fdf9fb;
+
+}
+
+.card {
+    width: 400px;
+    height: 450px;
+    background-color: #050404;
+    opacity: 0.7;
+}
+
+.card__img {
+
+    width: 200px;
+    height: 200px;
+    margin-top: -60%;
+    background-size: cover;
+}
+
+.card__title {
+    padding: 2px;
+}
+
+/*iconos*/
+.card__projects-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1%;
+}
+
+.card__projects-links a {
+    color: #ee93b9;
+    text-decoration: none;
+}
+
+.card__projects-links i {
+    font-size: 1.8em;
+    margin-top: 1em;
+}
+
+.card .project-details {
+    margin: 0 auto;
+    margin: 2em;
+    margin-right: 25%;
+    width: 25%;
+    display: flex;
+    align-self: center;
+}
+
+.card .project-details a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/*bottom texto*/
+.project-details-content {
+    display: flex;
+    width: 120%;
+    margin-right: -80%;
+    justify-content: center;
+}
+
+.volver {
+    padding: 10px 20px;
+    background-color: #c78f8f;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(167, 83, 133);
+}
+
+/*Contacto*/
+.contact-section{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-image: url(img/forest-3622519_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*titulo*/
+.contact-headings h2 {
+    font-size: 2em;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: #aa5c5d;
+}
+
+.divider {
+    margin-left: 11%;
+}
+
+.container-contact {
+    padding: 3em;
+    margin: 0 auto;
+}
+
+.container-contact img{
+    width: 90px;
+    height: 90px;
+    bottom: 0px;
+    margin-top: -15%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #f19d9e;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    padding: 1.5em;
+    border: 1px solid #f19d9e;
+}
+
+/*estilos boton*/
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #a75c7b;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(150, 8, 102);
+
+}
+
+.btn-submit:hover{
+    background-color: #eeb4d3;
+    box-shadow: none;
+}
+
+/*footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:  30vw;
+    height: 700px;
+    opacity: 0.6;
+    background-color: #080406;
+    margin-top: -15%;
+    margin-left: 100%;
+    margin-bottom: -23%;
+}
+
+.footer-content h2{
+    font-size: 3em;
+    color: #f5eeee;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.footer-content h5, 
+.social-network i {
+    font-size: 2.5em;
+    color: #c95991;
+    margin-bottom: 70% ;
+    margin-left: 10%;
+}
+
+.footer-content {
+    background-image: url(img/arroba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-content h3{
+    margin-left: 6em;
+    margin-top: -50%;
+}
+
+.footer-content h4{
+    margin-left: 2em;
+    margin-top: -2%;
+}
+/*iconos*/
+.social-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin-top: 1em;
+    margin-left: 5%;
+}
+
+.contact-headings .download-cv{
+    margin-left: 4em;
+    margin-top: -10%;
+}
